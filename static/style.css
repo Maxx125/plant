@@ -1,0 +1,104 @@
+/* static/style.css */
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(94, 179, 138, 0.9); /* Semi-transparent light green background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text color */
+}
+
+/* Form styles */
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* File upload button styles */
+label.upload-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green button color */
+    color: #fff; /* White text color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+label.upload-btn:hover {
+    background-color: #45a049; /* Darker green hover color */
+}
+
+/* Uploaded image styles */
+.uploaded-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Prediction section styles */
+.prediction {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(51, 105, 30, 0.9); /* Semi-transparent dark green background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.prediction h2 {
+    color: #fff; /* White text color */
+}
+
+.prediction p {
+    color: #eee; /* Light gray text color */
+    margin-bottom: 10px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 10px;
+ }
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+ }
+.menu-content {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    
+}
+.menu-content a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.menu-content a:hover {
+    background-color: #f1f1f1;
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Plant Disease Recognition</h1>
+        <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file" style="display: none;">
+            <label for="file" class="upload-btn">Upload Image</label>
+            <input type="submit" value="Recognize Disease">
+        </form>
+        {% if prediction %}
+            <h2>Prediction</h2>
+            <p>Uploaded Image: {{ filename }}</p>
+            <img src="{{ url_for('uploaded_file', filename=filename) }}" class="uploaded-image">
+            <div class="prediction">
+                <h3>{{ prediction.disease }}</h3>
+            </div>
+        {% endif %}
+            <div>
+        {% if description %}
+            <h2>Disease Description</h2>
+            <p>{{ description }}</p>
+        {% endif %}
+            </div>
+</body>
+</html>
